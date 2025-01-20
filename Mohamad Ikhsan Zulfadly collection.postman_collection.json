@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "0f598bd0-2669-4765-830b-d63dea9d830b",
+		"name": "Mohamad Ikhsan Zulfadly collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16682538"
+	},
+	"item": [
+		{
+			"name": "createBooking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "560124",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "05/01/2024",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBooking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "1652024",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "06/01/2024",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "data_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/updateBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"updateBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBooking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/deleteBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"deleteBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createBooking7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "total_bayar",
+							"value": "100000",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_masuk",
+							"value": "20/01/2025",
+							"type": "text"
+						},
+						{
+							"key": "lama_menginap",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/createBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"createBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "bearer-token",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MzQ0ZTY1LWJiYzktNDRkMS1hOWQwLWY5NTdiMDc5YmQwZSIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSJdLCJjbGllbnRfaWQiOiJhcHBfWDh6WTZ2VzJwUTl0UjNkRTduSzFqTDVnSCIsImV4cCI6MTczNzk1NjQyMiwiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS9hdXRoIjp7InVzZXJfaWQiOiJ1c2VyLTgybm5KNkhHcWZvZFFFRElCSWR2c3Y1QiJ9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJtaWtoc2FuejkyNEBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZX0sImlhdCI6MTczNzA5MjQyMSwiaXNzIjoiaHR0cHM6Ly9hdXRoLm9wZW5haS5jb20iLCJqdGkiOiJmN2IyZDZiYS1lZjllLTQ0OWMtYTEzZS0zMDQ0Yjk4NTYzYjAiLCJuYmYiOjE3MzcwOTI0MjEsInB3ZF9hdXRoX3RpbWUiOjE3MzcwOTI0MjAxMDIsInNjcCI6WyJvcGVuaWQiLCJlbWFpbCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsIm1vZGVsLnJlcXVlc3QiLCJtb2RlbC5yZWFkIiwib3JnYW5pemF0aW9uLnJlYWQiLCJvcmdhbml6YXRpb24ud3JpdGUiXSwic2Vzc2lvbl9pZCI6ImF1dGhzZXNzXzNFZ2pxTkZWN0xhSWplcTdHd21yRUx2NiIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTE0MzM5Mzg4NzQxMzQ2OTMyNDQ1In0.XVsjp3vjoYnBvBuBo7HS-Jzxr9tyfdIFGEQmuxpeVa3XwxE1C9KLldRUihPCVI35_ydOOwn3DDqE9QbBcf5U-aaFp4YmUXU4cUNoSGgf7Vt_TCTovixaDs8hvvto6Cv2RfCLctqdXj-K_SvLtnzS08qX-VNb18rQToi3rW2ZZohGaGALTcXuKefpEibGVi9HS_2ubTUtGeumTOPVPCD1eGKgVPdBA9QFawjmBhiv_NFf8Cbja3KS4TGeF-B1MgphXKaQSbVogfRN-aYJA1GTLByiKoIJAOONn7zZRYMJ8oYcFiCLz9ras_ljOXEGQ5tFcpnHt6mFyzVguRN_OKIfrXtdYfoATuJC09tPouPkiV57mM8M-zzA-TtB0bW5E6f4EZez4BrDgQDWN7l7ztska1R2Gxp0fMIf4u_SBrXxvPz26JLE29Ua8O6R_Uc2yJTItE5AXE1GFzT-NGBREXtr8dJan0-TXYJ4M10zWoO3mLN5Q15rmtOA1SeU2qB3kb3ZwvCLIOsEKo35rZkyNfcOINl3SmwDpUxi09rgwd2D6dPcguTn-9mUAp3lIi1YJ1BOGPQajK4kfahJJJEwNlIIamvxZ4SMgv5WacMw_aY2pdD-",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "nama_pemesan",
+							"value": "Ikhsan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "testapi.com/findBooking",
+					"host": [
+						"testapi",
+						"com"
+					],
+					"path": [
+						"findBooking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
